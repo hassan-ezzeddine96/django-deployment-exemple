@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{% extends "first_app/base.html" %}
+<!-- <!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Guitar Page</title>
+    <link rel="stylesheet" href="{% static 'css/mystyle.css'  %}">
+</head>
+<body>
+    <h1>Hi this is a picture of Django himself!</h1>
+    <img src="{% static 'images/djangoguitar.jpg' %}" alt="Uh Oh, didn't show!">
+</body>
+</html> -->
+<!-- {% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/mystyle.css'  %}">
+</head>
+<body> -->
+    <!-- <h1>Hi Welcome to Django Level Two</h1>
+    <h2>Here Are Your Access Records:</h2>
+    <div class="djangotwo">
+        {% if access_records %}
+            <table>
+                <thead>
+                    <th>Site Name</th>
+                    <th>Date Accessed</th>
+                </thead>
+                {% for acc in access_records %}
+                <tr>
+                    <td>{{ acc.name }}</td>
+                    <td>{{ acc.date }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        {% else %}
+            <p>No Access Records Found!</p>
+        {% endif %}
+                 
+    </div> -->
+
+
+    <!-- <div class = "container">
+        <div class = "jumbotron">
+            <h1>Welcome to home page!</h1>
+    <h2>Go to /formpage to fill out the form</h2>
+        </div>
+    </div> -->
+    {% block body_block %}
+    <div class="jumbotron">
+        <h1>Django Level Five</h1>
+    </div>
+    <!-- <h1>Welcome to Index!</h1> -->
+    <!-- <h2>This is index.html page showing!</h2> -->
+    <!-- <h1>{{text|cut:'world'}}</h1>
+    <h1>{{number|add:"99"}}</h1> -->
+    
+    {% endblock %}
+<!-- </body>
+</html> -->
